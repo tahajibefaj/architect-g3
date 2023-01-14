@@ -87,12 +87,8 @@ body {
     margin-bottom: 40px;
 }
 
-.feature-1 .common-description {
-    text-align: justify;
-    margin: 30px 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #727272;
+.banner-description {
+    text-align: center;
 }
 
 .banner-image {
@@ -143,6 +139,13 @@ body {
     color: #727272;
 }
 
+.feature-1 .common-description {
+    text-align: justify;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
 
 /* --------FEATURES 2-------- */
 
@@ -208,8 +211,9 @@ body {
     font-size: 65px;
     font-weight: 700;
     color: #FFFFFF;
-    
+
 }
+
 .top-element-container button p {
     margin: 0;
     font-size: 25px;
@@ -217,3 +221,111 @@ body {
     color: #FFFFFF;
 }
 
+
+
+/* --------FACTS-------- */
+
+.facts {
+    margin: 200px 250px;
+}
+
+.facts .common-description {
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.fact-box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.fact-box:hover {
+    transform: scale(1.5);
+}
+
+.fact-box {
+    transition: transform .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #FF900E;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.fact-count {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 600;
+    color: #424242;
+}
+
+.fact-name {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+}
+
+
+
+/* --------SPONSOR-------- */
+
+.sponsors {
+    margin: 0 250px;
+}
+
+.sponsors .common-title {
+    text-align: center;
+}
+
+.sponsors .common-description {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.brand-logo-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsors .brand-logo-container img {
+    margin-right: 150px;
+    filter: grayscale(100%);
+    margin-bottom: 100px;
+}
+
+
+
+/* --------FOOTER-------- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 800px;
+    background-color: #FFF4E7;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.footer-text {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
