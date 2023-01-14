@@ -1,0 +1,219 @@
+/* --------UTILITIES-------- */
+
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.common-description {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.common-btn {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #FF900E;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 20px;
+}
+
+.common-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    margin: 0;
+}
+
+
+/* --------HEADER-------- */
+
+.header {
+    margin: 0;
+    background-color: #FF900E1A;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.nav-container ul {
+    display: flex;
+}
+
+.nav-container ul li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    text-align: center;
+    margin: 0;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.feature-1 .common-description {
+    text-align: justify;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+.banner-image {
+    margin-top: 50px;
+    width: 73%;
+    height: auto;
+}
+
+
+
+/* --------FEATURES 1-------- */
+
+.feature-1 {
+    margin: 100px 300px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 25px;
+    margin-right: 70px;
+}
+
+.feature-title {
+    color: #727272;
+    font-weight: 300;
+    font-size: 45px;
+    margin: 0;
+}
+
+.feature-title span {
+    color: #131313;
+    font-weight: 700;
+}
+
+.feature-title div {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.feature-description {
+    text-align: justify;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+
+/* --------FEATURES 2-------- */
+
+.feature-2 {
+    margin: 100px 250px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.feature-2 .common-title {
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+    margin-bottom: 25px;
+}
+
+.feature-2 .common-description {
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 30px #0000000f;
+}
+
+.feature-box .feature-name {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.feature-box .common-description {
+    margin: 0;
+    text-align: justify;
+}
+
+.feature-element {
+    position: relative;
+}
+
+.feature-element {
+    position: relative;
+}
+
+.top-element-container {
+    position: absolute;
+    top: 850px;
+    left: -100px;
+}
+
+.top-element-container button {
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: 0;
+    padding: 45px;
+}
+
+.top-element-container button h3 {
+    margin: 0;
+    font-size: 65px;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+}
+.top-element-container button p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
