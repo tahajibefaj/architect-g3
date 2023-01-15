@@ -195,14 +195,14 @@ body {
     left: -100px;
 }
 
-.top-element-container button {
+.top-element-container .canvas {
     background-color: #FF900E;
     border-radius: 8px;
     border: 0;
     padding: 45px;
 }
 
-.top-element-container button h3 {
+.top-element-container .canvas  h3 {
     margin: 0;
     font-size: 65px;
     font-weight: 700;
@@ -210,7 +210,7 @@ body {
 
 }
 
-.top-element-container button p {
+.top-element-container .canvas  p {
     margin: 0;
     font-size: 25px;
     font-weight: 500;
@@ -374,38 +374,86 @@ body {
 
 /* --------MEDIA QUARIES-------- */
 
-/* .feature-1,
+ 
 .banner,
 .header {
     display: none;
-} */
+}
 
 @media only screen and (max-width:688px) {
+
+
+     /* feature - 1 */
+
+    .feature-1 {
+        margin: 100px 0;
+        flex-direction: column;
+    }
+
+     .feature-image-container {
+        grid-template-columns: repeat(1,1fr);
+        margin: 0;
+     }
+
+     .feature-title {
+        margin-top: 20px;
+        text-align: center;
+     }
+
+     .feature-1 .common-description {
+        padding: 0 20px;
+        text-align: center;
+     }
 
 
 
     /* feature - 2 */
 
     .feature-2 {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         margin: 0;
         gap: 20px;
         margin-bottom: 100px;
     }
 
+    .feature-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .feature-2 .common-title {
         padding: 0;
         margin: 0;
-        border-left: 5px solid #FF900E;
+        border-style: none;
+        border-bottom: 5px solid #FF900E;
         margin-bottom: 25px;
         text-align: center;
     }
 
-    .feature-2 .common-description {
+    .feature-2 .feature-info-container .common-description {
         text-align: center;
+        padding: 0 20px;
         margin-bottom: 30px;
     }
 
+    .feature-box {
+        /* display: none; */
+        width: 300px;
+        padding: 30px 30px 10px  30px;
+        /* background-color: rgb(229, 255, 0); */
+    }
+
+    .feature-name {
+        text-align: center;
+    }
+
+    .feature-box .common-description {
+        margin: 0;
+        text-align: left;
+    }
 
     .feature-element {
         display: flex;
@@ -420,11 +468,29 @@ body {
     }
 
     .bottom-element-container img {
-        width: 400px;
+        width:300px;
     }
 
     .feature-2 .common-description {
         text-align: left;
+    }
+
+    .feature-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-element-container .canvas {
+        display: none;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
     }
 
     /* facts */
@@ -475,9 +541,34 @@ body {
     }
 
 
+    /* subscribe  */
+
+    .subscribe-container {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .subscribe-text {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .subscribe-text .common-description {
+        text-align: center;
+    }
+
+    .subscribe-form {
+        text-align: center;
+    }
+
+    .subscribe-form input {
+        width: 100%;
+    }
+
     /* footer  */
 
     .footer-container {
         width: 100%;
+        padding: 0 20px;
     }
 }
