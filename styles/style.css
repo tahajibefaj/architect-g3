@@ -189,10 +189,6 @@ body {
     position: relative;
 }
 
-.feature-element {
-    position: relative;
-}
-
 .top-element-container {
     position: absolute;
     top: 850px;
@@ -304,12 +300,56 @@ body {
 }
 
 
+/* --------CONTACT-------- */
+
+.subscribe {
+    padding: 100px 0;
+    background-color: #131313;
+}
+
+.subscribe-container {
+    margin: 0 250px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe .common-title {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.subscribe .common-description {
+    text-align: justify;
+    color: white;
+}
+
+.subscribe .fa-brands {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.subscribe-form input {
+    padding-left: 15px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    width: 350px;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+
 
 /* --------FOOTER-------- */
 
 .footer {
     display: flex;
     justify-content: center;
+    background-color: #131313;
 }
 
 .footer-container {
@@ -320,7 +360,7 @@ body {
     width: 800px;
     background-color: #FFF4E7;
     border-radius: 10px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 .footer-text {
@@ -328,4 +368,116 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: 400;
+}
+
+
+
+/* --------MEDIA QUARIES-------- */
+
+/* .feature-1,
+.banner,
+.header {
+    display: none;
+} */
+
+@media only screen and (max-width:688px) {
+
+
+
+    /* feature - 2 */
+
+    .feature-2 {
+        flex-direction: column;
+        margin: 0;
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+
+    .feature-2 .common-title {
+        padding: 0;
+        margin: 0;
+        border-left: 5px solid #FF900E;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .feature-2 .common-description {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+
+    .feature-element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-element-container {
+        top: 0;
+        left: 0;
+    }
+
+    .bottom-element-container img {
+        width: 400px;
+    }
+
+    .feature-2 .common-description {
+        text-align: left;
+    }
+
+    /* facts */
+
+    .facts {
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+    .fact-box-container {
+        display: flex;
+        flex-direction: column;
+        transition: transform .2s;
+    }
+
+    .fact-box:hover {
+        transform: scale(1.2);
+    }
+
+    /* sponsors  */
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .common-title {
+        text-align: center;
+    }
+
+    .common-description {
+        text-align: center;
+    }
+
+    .brand-logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .sponsors .brand-logo-container img {
+        margin: 0;
+        margin-bottom: 100px;
+    }
+
+
+    /* footer  */
+
+    .footer-container {
+        width: 100%;
+    }
 }
