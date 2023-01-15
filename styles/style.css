@@ -374,13 +374,43 @@ body {
 
 /* --------MEDIA QUARIES-------- */
 
- 
-.banner,
-.header {
-    display: none;
-}
-
 @media only screen and (max-width:688px) {
+
+    /* top container (nav part) */
+
+    .top-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-container ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .nav-container ul li {
+        margin: 0;
+        list-style: none;
+        margin-right: 10px;
+    }
+
+
+    /* banner  */
+
+    .banner-title {
+        padding: 0 10px;
+        font-size: 300%;
+    }
+
+    .banner-description {
+        padding: 0 10px;
+    }
+
+
 
 
      /* feature - 1 */
@@ -401,7 +431,7 @@ body {
      }
 
      .feature-1 .common-description {
-        padding: 0 20px;
+        padding: 0 10px;
         text-align: center;
      }
 
@@ -435,7 +465,7 @@ body {
 
     .feature-2 .feature-info-container .common-description {
         text-align: center;
-        padding: 0 20px;
+        padding: 0 10px;
         margin-bottom: 30px;
     }
 
@@ -549,7 +579,7 @@ body {
     }
 
     .subscribe-text {
-        padding: 0 20px;
+        padding: 0 10px;
         text-align: center;
     }
 
@@ -569,6 +599,6 @@ body {
 
     .footer-container {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 }
